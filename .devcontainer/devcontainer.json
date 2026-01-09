@@ -1,0 +1,27 @@
+{
+    "name": "espidf-for-m5stack-esp32",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "esp-idf",
+    "workspaceFolder": "/workspaces",
+    "shutdownAction": "stopCompose",
+    "runArgsCommand": "--privileged",
+    "containerEnv": {
+        "ESPPORT": "${localEnv:ESPPORT}"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "espressif.esp-idf-extension",
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools"
+            ],
+            "settings": {
+                "terminal.integrated.env.linux": {
+                    "LANG": "en_US.UTF-8",
+                    "LC_ALL": "en_US.UTF-8"
+                }
+            }
+        }
+    }
+}
