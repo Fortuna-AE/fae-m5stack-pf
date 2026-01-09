@@ -1,3 +1,8 @@
+# vscode & EDP-IDF generated files
+.vscode/
+build/
+components/
+
 # Prerequisites
 *.d
 
